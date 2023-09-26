@@ -1,0 +1,334 @@
+section#hero{
+    height:auto !important;
+}
+
+#regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+    color: black !important;
+  }
+
+#regForm h1{
+    color: cadetblue !important;
+    font-size: 3rem;
+}
+  
+  /* Style the input fields */
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    border: 1px solid #aaaaaa !important;
+
+
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    
+    padding: 10px;
+    width: 100%;
+    
+    margin-top: 0.5rem !important;
+ 
+  }
+
+  
+  select {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    border: 1px solid #aaaaaa;
+    padding-top: 0.5rem;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+
+ 
+  /* Money input  */
+  
+  .input-icon {
+    background: #ddd;
+  }
+  
+  .input-with-icon {
+    border: none;
+    flex: 1;
+    width: 90%;
+  }
+  
+  .input-icon, .input-with-icon {
+    padding: 10px;
+  }
+  
+
+  
+  /* Mark input boxes that gets an error on validation: */
+  select.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #04AA6D;
+  }
+
+
+  /*    BUTTONS PREVIOUS & NEXT */
+  #nextBtn {
+    background-color: #04aa6da7;
+    color: #fff !important;
+    padding: 0.5rem 1rem;   
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size:  1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #nextBtn:hover {
+    /* scale: 1.05; */
+    color: #fff;
+    background-color: #028c59a7;
+}
+
+  #nextBtn:active {
+    scale: 0.95;
+}
+
+#prevBtn {
+  background-color: #0697B8;
+  color: #fff !important;
+  padding: 0.5rem 1rem;   
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size:  1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+#prevBtn:hover {
+  /* scale: 1.05; */
+  color: #fff;
+  background-color: #0583a0;
+}
+
+#prevBtn:active {
+  scale: 0.95;
+}
+
+  /************************************** */
+  /* Autocomplete Items   */
+
+  
+  /*the container must be positioned relative:*/
+  .autocomplete {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #inputCiudades {
+    border: 1px solid transparent;
+    background-color: white;
+    
+  }
+  
+
+  .tab p {
+    padding-top: 0.5rem;
+  }
+
+  .tab textarea{
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    border: 1px solid #aaaaaa !important;
+
+
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    
+    padding: 10px;
+    width: 100%;
+    
+    margin-top: 0.5rem !important;
+  }
+
+  
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  /*when hovering an item:*/
+  .autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+  }
+  
+  /*when navigating through the items using the arrow keys:*/
+  .autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+  }
+
+  .middleInputWidth {
+    width: 40% !important;
+    display: table-cell;
+    padding-left: 3rem;
+    color: black !important;
+    text-align: initial;
+  }
+
+
+  /* PDF BUTTON GENERATOR */
+  #buttonPDFGenerator {
+    background-color: #4A001F;
+    color: #fff !important;
+    padding: 0.5rem 1rem;   
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size:  1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #buttonPDFGenerator:hover {
+    /* scale: 1.05; */
+    color: #fff;
+    background-color: #380118;
+  }
+
+  @media (max-width: 576px) {
+    .middleInputWidth {
+      display: inline;
+    }
+  }
+
+
+  .bigText {
+
+  }
+
+
+
+  /*   ICON PDF */
+  .icons {
+    display: inline-block;
+    margin: 0 auto;
+ }
+  .icon {
+    display: inline-block;
+    width: 40px;
+    height: 50px;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    margin: 0 5px;
+ }
+  .icon::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-radius: 0 2px;
+    transition: all 0.2s linear;
+    backface-visibility: hidden;
+ }
+
+  .icon--pdf {
+    background-color: #db4437;
+ }
+  .icon--pdf::after {
+    background: linear-gradient(45deg, #e78178 50%, #fff 50%);
+ }
+  .icon--pdf i::before {
+    content: '☵';
+ }
+
+ 
+ 
+  .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    font-size: 10px;
+    color: #fff;
+    font-weight: 500;
+ }
+  .icon i::before, .icons i::after {
+    display: block;
+    transition: all 0.2s linear;
+ }
+  .icon i::before {
+    text-align: center;
+    font-size: 12px;
+    opacity: 0; 
+    transform: translateY(5px);
+ }
+  .icon i::after {
+    content: attr(title);
+    transform: translateY(-5px);
+ }
+  .icon:hover {
+    border-radius: 2px 4px 2px 2px;
+ }
+  .icon:hover::after {
+    width: 12px;
+    height: 12px;
+ }
+  .icon:hover i::before {
+    transform: translateY(0);
+    opacity: 1;
+ }
+  .icon:hover i::after {
+    transform: translateY(0);
+ }

@@ -1,0 +1,443 @@
+@font-face {
+    font-family: Gibson;
+    src: url(https://michoacan.gob.mx/cdn/fonts/gibson-regular-webfont.woff);
+    font-weight: normal;
+   }
+
+/*
+#4A001F
+#FFC3D0
+
+*/
+
+/*  MAIN  */
+
+main {
+    background-image: url('https://a.travel-assets.com/findyours-php/viewfinder/images/res70/66000/66876-Morelia.jpg');
+    background-size: cover;
+    background-position: center;
+}
+body {
+    height: 100vh;
+    background-color: white ;
+    
+   /* background-image: url('https://michoacan.gob.mx/slider/2022-11-23_ndg2K.jpg'); */
+    background-size: cover;
+    background-position: center;
+}
+
+/*
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #4A001F !important;
+    font-size: 1rem;
+}
+
+a :hover {
+    color: #9c0041;
+}
+*/
+
+
+/* Curved  */
+
+  .curved-div {
+    position:inherit;
+    /* background: #fff ;  */
+    color: #FFF;
+    text-align: center;
+    overflow: hidden;
+    /* background-image: url('https://michoacan.gob.mx/slider/2022-11-23_ndg2K.jpg');   */
+    
+  }
+  .curved-div svg {
+    display: block;
+  }
+  .curved-div.upper {
+     background: #4A001F;
+  }
+  .curved-div h1 {
+    font-size: 6rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top:0rem;
+  }
+  .curved-div p {
+    font-size: 1rem;
+    margin:0 5rem 0rem 5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+
+/* HEADER */
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    border-bottom: none !important;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar .logo a {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #4A001F;
+}
+
+.navbar a :hover {
+    color: #9c0041;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    color: #4A001F;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: #4A001F;
+    color: #fff !important;
+    padding: 0.5rem 1rem;   
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size:  0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    color: #fff;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+/* DROPDOWN MENU */
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);  
+}
+
+.dropdown_menu.open {
+    height: 240px;
+    
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #4A001F;
+}
+
+
+/* BODY  */
+section#hero{
+    height: calc(50vh - 60px); /* -60px navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: center;  */
+    text-align: center;
+    color: #fff;
+    background-color: white 0.0;
+}
+
+#hero h1 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.hero_text{
+    padding-left: 15vw;
+} 
+
+
+a.homeBtn{
+    background: linear-gradient(to right,#600c0c ,#8b2121);
+    background-color: #4A001F;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border: 0px solid #000;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+   }
+   a.homeBtn span{
+    display: block;
+    background-size: contain;
+   }
+   a.homeBtn:hover{
+    color: #FFF;
+    background: linear-gradient(to right,#600c0c ,#430909);
+    background-color: #600c0c;
+    transform: scale(1.05);
+   }
+   a.homeBtn:active{
+    transform: scale(0.95);
+   }
+
+/* FOOTER  */
+
+  @font-face { 
+    font-family:"Font Awesome 5 Brands";
+    font-style:normal;
+    font-weight:400;
+    font-display:block;
+    src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.eot);
+    src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.woff2) format("woff2"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.woff) format("woff"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.ttf) format("truetype"),url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.svg#fontawesome) format("svg");
+  } 
+  
+  
+  :root { 
+      --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; 
+      --bs-body-font-family: var(--bs-font-sans-serif); 
+      --bs-body-font-size: 1rem; 
+      --bs-body-font-weight: 400; 
+      --bs-body-line-height: 1.5; 
+      --bs-body-color: #212529; 
+      --bs-body-bg: #fff; 
+      --bs-link-color: #0d6efd; 
+      --bs-link-hover-color: #0a58ca; 
+  } 
+    
+  
+  
+  @media (min-width: 576px){ 
+    .footerContainer { 
+      max-width: 540px;
+    } 
+  }     
+  
+  @media (min-width: 768px){ 
+    .footerContainer { 
+      max-width: 720px;
+    } 
+  }     
+  
+  @media (min-width: 992px){ 
+    .footerContainer { 
+      max-width: 960px;
+    } 
+  }     
+  
+  @media (min-width: 1200px){ 
+    .footerContainer { 
+      max-width: 1140px;
+    } 
+  }     
+  
+  @media (min-width: 1400px){ 
+    .footerContainer { 
+      max-width: 1320px;
+    } 
+  }     
+  
+  .footer-main { 
+      padding: 50px 0; 
+      background-color: red; 
+  } 
+  
+  
+  .footer-pleca { 
+      background-color: #6A0F49; 
+      background-image: url(https://michoacan.gob.mx/cdn/img/pleca.svg); 
+      background-repeat: repeat-x; 
+      background-repeat-x: repeat; 
+      background-repeat-y: no-repeat;
+  } 
+  
+  .row { 
+      --bs-gutter-x: 1.5rem; 
+      --bs-gutter-y: 0; 
+      display: flex; 
+      flex-wrap: wrap; 
+      margin-top: calc(-1 * var(--bs-gutter-y)); 
+      margin-right: calc(-.5 * var(--bs-gutter-x)); 
+      margin-left: calc(-.5 * var(--bs-gutter-x));
+  } 
+  
+  
+  
+  @media (min-width: 992px){ 
+    .col-lg-4 { 
+      flex: 0 0 auto; 
+      width: 33.33333333%;
+    } 
+  }     
+  
+  
+  .col-12 { 
+      flex: 0 0 auto; 
+      width: 100%;
+  } 
+  
+  .col { 
+      flex: 1 0 0%;
+  } 
+  
+  
+  footer-main a { 
+      text-decoration: none !important;
+      font-size: 14px; 
+      letter-spacing: 0; 
+      line-height: 22px; 
+      color: white; 
+      margin-bottom: 0;
+  } 
+  
+  .textoGuinda { 
+      color: #4A001F;
+  } 
+  
+  footer-main a:hover { 
+      color: var(--bs-link-hover-color);
+  } 
+  
+  footer-main a:hover { 
+      color: #FFC3D0; 
+      text-decoration: none;
+  } 
+  
+  footer-main h4 { 
+      margin-top: 0; 
+      margin-bottom: .5rem; 
+      font-weight: 500; 
+      line-height: 1.2;
+  } 
+  
+  footer-main h4 { 
+      font-size: calc(1.275rem + .3vw);
+  } 
+  
+  @media (min-width: 1200px){ 
+    footer-main h4 { 
+      font-size: 1.5rem;
+    } 
+  }     
+  
+  
+  
+  .textoGris { 
+      color: #6D807F;
+  } 
+  
+  
+  .logoFooter { 
+      max-height: 75px;
+  } 
+  
+  
+  .social-icons a  { 
+      color: #4A001F !important;
+  } 
+  
+  .social-icons a:hover { 
+      color: #FFC3D0 !important;
+  } 
+  
+  .fa-2x { 
+      font-size: 2em;
+  } 
+  
+  
+  .fa-twitter:before { 
+      content: "\f099";
+  } 
+  
+  .fa-facebook:before { 
+      content: "\f09a";
+  } 
+  
+  .fa-instagram:before { 
+      content: "\f16d";
+  } 
+  
+  .fa-telegram-plane:before { 
+      content: "\f3fe";
+  } 
+  
+  .fa-spotify:before { 
+      content: "\f1bc";
+  } 
+  
+  
+  
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    } 
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+
+    .hero_text h1{
+        font-size: 3rem !important;
+    }
+}
