@@ -112,16 +112,16 @@
                  <!-- <p><input placeholder="Unidad Responsable" oninput="this.className = ''"></p> -->
                   <p><select id="idUnidadAdministrativa" class="" name="unidadAdministrativa" required="">    
                     <option value="" disabled selected hidden>Unidad Responsable</option>              
-                    <option value="35"> Dirección de Inversiones                                        </option>
-                    <option value="37"> Dirección de Desarrollo Empresarial y Economía Social           </option>
-                    <option value="38"> Dirección de Mejora Regulatoria                 </option>
-                    <option value="39"> Dirección de Comercialización                   </option>
-                    <option value="41"> Dirección de Empleo Digno                       </option>
-                    <option value="157"> Dirección de Gestión de Fondos y Proyectos     </option>
-                    <option value="158"> Dirección de Previsión Social                  </option>
-                    <option value="192"> Delegación Administrativa                      </option>
-                    <option value="193"> Tecnica                                        </option>
-                    <option value="194"> Oficina del Secretario                         </option>
+                    <option value="Dirección de Inversiones"> Dirección de Inversiones                         </option>
+                    <option value="Dirección de Desarrollo Empresarial y Economía Social"> Dirección de Desarrollo Empresarial y Economía Social           </option>
+                    <option value="Dirección de Mejora Regulatoria"> Dirección de Mejora Regulatoria           </option>
+                    <option value="Dirección de Comercialización"> Dirección de Comercialización               </option>
+                    <option value="Dirección de Empleo Digno"> Dirección de Empleo Digno                       </option>
+                    <option value="Dirección de Gestión de Fondos y Proyectos"> Dirección de Gestión de Fondos y Proyectos  </option>
+                    <option value="Dirección de Previsión Social"> Dirección de Previsión Social    </option>
+                    <option value="Delegación Administrativa"> Delegación Administrativa           </option>
+                    <option value="Tecnica"> Tecnica  </option>
+                    <option value="Oficina del Secretario"> Oficina del Secretario      </option>
                 </select></p>
 
                   <p><input placeholder="Numero de Oficio" type="number" id="numOficio" oninput="this.className = ''"></p>
@@ -133,8 +133,8 @@
                 </div>
                 
                 <div class="tab">Usuario
-                    <p><input placeholder="Nombre Completo" id="nombreUsuario" oninput="this.className = ''"></p>
-                    <p><input placeholder="Cargo" id="cargoUsuario" oninput="this.className = ''"></p>
+                    <p><input placeholder="Nombre Completo" id="nombreUsuario" style="text-transform: capitalize;"></p>
+                    <p><input placeholder="Cargo" id="cargoUsuario" style="text-transform: capitalize;"></p>
                     <p><textarea placeholder="Descripcion detallada actividades" id="descripcionDetalles" class="bigText" oninput="this.className = ''"></textarea></p>
                     <p class="middleInputWidth" style="padding-left: 0 !important;"> Fecha de inicio <input placeholder="Fecha(s) de la comision" onfocus="(this.type='date')" id="fechaInicio"></p>
                     <p class="middleInputWidth"> Fecha de termino <input placeholder="Fecha(s) de la comision" onfocus="(this.type='date')"  id="fechaFinal"></p>
@@ -208,10 +208,14 @@
                 </div>
 
                 <div class="tab">
-                    <p>Oficio de comision</p>
+                    <iframe
+				id="frame1"
+				style=""
+				src="Formato Viaticos 1.htm"
+			></iframe>
                     <div class="icons">
                     <div class="icon icon--pdf"><i title="pdf"></i></div>
-                    <p><button type="button" class="buttonPDFGenerator" id="generatonBtn" onclick="">Descargar Oficio</button></p>
+                    <p><button type="button" class="buttonPDFGenerator" id="btn-GenerarPDF1" onclick="">Descargar Oficio</button></p>
                     </div>
                     <!-- <embed src="Oficios/OFICIO COMISIÓN LZC (1).pdf" type="application/pdf" width="400px" height="640px">   -->
                 </div>
@@ -234,6 +238,7 @@
                 
                   <div style="overflow:auto; padding-top: 0.5rem;">
                     <div style="float:right;">
+                      <button type="button" id="loadCookiesBtn" onclick="loadCookies()">Rellenar Campos</button>
                       <button type="button" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
                       <button type="button" id="nextBtn" onclick="nextPrev(1)">Siguiente</button>
                     </div>
@@ -323,18 +328,28 @@
 
     <script src="https://www.michoacan.gob.mx/cdn/js/jquery3.6.0.min.js"></script>
     <script src="https://www.michoacan.gob.mx/cdn/js/bootstrap.js"></script>
+
+    <!--<script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="https://unpkg.com/downloadjs@1.4.7"></script> -->
+
+    
     <script src="../../js/index.js"></script>
     <script src="viaticos.js"></script>
+  
    
     <script type="module" src="/db/firebase_config.js"></script>
+    <!--<script src="pdf_editor.js"></script> -->
+    <script src="pdf_editorHTML1.js"></script>
 
+    
     <!--<script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.4.0/dist/pdf-lib.min.js"></script> -->
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> -->
-    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
-    <script src="https://unpkg.com/downloadjs@1.4.7"></script>
+    
 
-    <script src="viatico_pdf_generator.js"></script>
-    <script src="pdf_editor.js"></script>
+    <script>
+ 
+    </script>
+
     
 </body>
 </html>

@@ -129,8 +129,17 @@ function showTab(n) {
   // ... and fix the Previous/Next buttons:
   if (n == 0) {
     document.getElementById("prevBtn").style.display = "none";
+
+    //LocalStorage BUTTON
+    if (localStorage.getItem('Campos') !== null) {
+      document.getElementById("loadCookiesBtn").style.display = "inline";
+    } else {
+      document.getElementById("loadCookiesBtn").style.display = "none";
+    }
+ 
   } else {
     document.getElementById("prevBtn").style.display = "inline";
+    document.getElementById("loadCookiesBtn").style.display = "none";
   }
   if (n == (x.length - 1)) {
     document.getElementById("nextBtn").innerHTML = "Submit";
@@ -251,7 +260,7 @@ function autocomplete(inp, arr) {
           /*execute a function when someone clicks on the item value (DIV element):*/
               b.addEventListener("click", function(e) {
               /*insert the value for the autocomplete text field:*/
-              inp.value = this.getElementsByTagName("input")[0].value;
+              inp.value = this.getElementsByTagName("input")[0].value + ", Michoacán";
               /*close the list of autocompleted values,
               (or any other open lists of autocompleted values:*/
               closeAllLists();
@@ -365,6 +374,43 @@ function checksMayDate(inicioDate, finalDate) {
     console.log(diffDays)
     document.getElementById('duracionDias').value = diffDays
   })
+}
+
+//BTN CARGAR COOKIES FORMULARIO
+function loadCookies() {
+  // Retrieving the string
+let retString = localStorage.getItem("Campos")
+
+// Retrieved array
+let camposArray = JSON.parse(retString)
+console.log(camposArray)
+
+//LLENADO A MANO
+  document.getElementById('idUnidadAdministrativa').value = camposArray[0];
+  document.getElementById('numOficio').value = camposArray[1] ;
+  document.getElementById('documentDate').value = camposArray[2];
+  document.getElementById('inputCiudades').value = camposArray[8];
+
+/* USUARIO */
+  document.getElementById('nombreUsuario').value = camposArray[3];
+  document.getElementById('cargoUsuario').value = camposArray[4];
+
+  document.getElementById('duracionDias').value = camposArray[5];        //Duracion dias
+  document.getElementById('descripcionDetalles').value = camposArray[7];
+  document.getElementById('fechaInicio').value = camposArray[9];
+  document.getElementById('fechaFinal').value = camposArray[10];
+
+/*  Vehiculo  */
+  document.getElementById('vehicleInput').value = camposArray[11];
+  document.getElementById('marcaVehiculo').value = camposArray[12];
+  document.getElementById('modeloAuto').value = camposArray[13];
+  document.getElementById('modeloAnio').value = camposArray[14];
+  document.getElementById('placasInput').value = camposArray[15];
+
+/* Dinero */
+  document.getElementById('alimentacionDinero').value;
+  document.getElementById('hotelDinero').value;
+
 }
 
 /********************************************* */

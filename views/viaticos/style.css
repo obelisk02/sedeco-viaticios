@@ -125,7 +125,7 @@ section#hero{
 }
 
 #prevBtn {
-  background-color: #0697B8;
+  background-color: #F77263; 
   color: #fff !important;
   padding: 0.5rem 1rem;   
   border: none;
@@ -138,10 +138,32 @@ section#hero{
 #prevBtn:hover {
   /* scale: 1.05; */
   color: #fff;
-  background-color: #0583a0;
+  background-color: #f75d4c;
 }
 
 #prevBtn:active {
+  scale: 0.95;
+}
+
+
+#loadCookiesBtn {
+  background-color: #0697B8;
+  color: #fff !important;
+  padding: 0.5rem 1rem;   
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size:  1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+#loadCookiesBtn:hover {
+  /* scale: 1.05; */
+  color: #fff;
+  background-color: #0583a0; 
+}
+
+#loadCookiesBtn:active {
   scale: 0.95;
 }
 
@@ -332,3 +354,34 @@ section#hero{
   .icon:hover i::after {
     transform: translateY(0);
  }
+
+
+
+ /* IFRAME  */
+
+ #frame1 {
+  width: 100%;
+  height: 0px;
+  border: 0px;
+}
+
+/*
+#frame1 {
+  zoom: 0.75;
+  -moz-transform: scale(0.75);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.75);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.75);
+  -webkit-transform-origin: 0 0;
+}
+
+*/
+
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  #frame1 {
+    zoom: 1;
+  }
+}
+*/
